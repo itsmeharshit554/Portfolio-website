@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+body
+{
+    background-color: #1E1B2C;
+}
+
+.port_head{
+    margin-top:30px;
+    margin-left:60px;
+    font-size:48px;
+    font-weight: bold;
+
+}
+
+.st {
+    position: relative;
+    display: block;
+    margin: auto;   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-image: url("D:/Web Development/Portfolio Website/public/images/pages.png");
+    background-size: 180% 180%;     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+
+}
+.spl_purple
+{
+    color: #892CDC;
+}
+.purple
+{
+    color:#892CDC;
+    font-size:55px;
+}
+.lav
+{
+    color:#BC6FF1;
+    font-size: 55px;
+}
+
+
+header {
+        position: absolute;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 69;
+    padding: 11px 30px;
+    background: #1A1825;
+    position: fixed;
+    border-bottom: 1px 
+}
+
+header .logo {
+    color: #fff;
+    /* font-weight: bold; */
+    /* font-size: 2.5em;
+    text-decoration: none; */
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    transition: color 0.5s ease;
+    color: #fff;
+}
+
+header .navigation li a:hover {
+    transition: color 0.5s ease;
+    color:#892CDC;
+    
+}
+
+header .hamburger {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.unleash
+{
+    display:flex;
+    padding-top:150px;
+    padding-left:30px;
+    padding-bottom: 0px;
+    font-size:24px;
+    justify-content: left;
+}
+.hs_dev
+{
+    display:flex;
+    padding-left:30px;
+    font-size:24px;
+    justify-content: left;
+}
+.sec
+{
+    padding-top:25px;
+    padding-left:30px;
+    width: 500px;
+    font-size:16px;
+    text-align: left;
+}
+    .fst_btn
+    {   transition: color 0.5s ease;
+        margin-left: 29px;
+        margin-top: 40px;
+        margin-bottom:150px;
+        height: 43px;
+        font-size :16px;
+        /* font-weight:bold; */
+        width: 200px;
+        border: 0;
+        border-radius: 50px;
+        box-shadow: inset 0px 2px 4px 1px rgba(0.7, 0, 0, 0.5);
+        z-index: -1;
+        transition: transform 0.3s ease-out;
+        background: rgb(142,1,154);
+        background: linear-gradient(94deg, rgba(142,1,154,1) 0%, rgba(89,0,204,0.9780287114845938) 49%, rgba(46,208,209,1) 100%);
+        background-size: 400% 400%;
+    }
+
+    .fst_btn:hover
+    {
+        animation: gradientAnimation 7s ease infinite, scaleAnimation 0.2s ease-in-out forwards; 
+        
+    }
+    @keyframes gradientAnimation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50%
+        {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 50% 0%;
+        }
+    }
+
+
+    @keyframes scaleAnimation {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.03);
+        }
+    }
+    .fst_btn:not(:hover) {
+        transition: transform 0.9s ease-out;
+        transform: scale(1);
+      }
+
+/* Hide the scrollbar */
+::-webkit-scrollbar {
+    width: 0.5em; /* Set a width for the invisible scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Set the track color to transparent */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent; /* Set the handle color to transparent */
+  }
+  
+
+.white
+{
+    margin-left:30px;
+
+}
+/* .swiper-container
+{
+    /* display: flex;
+    justify-items: center;
+    justify-content: center;
+    font-weight:lighter ;
+    /* width:50%;
+    height:50%;
+    margin: 1000px; */ */
+
+
+    
+    .carousel-container {
+        position: absolute;
+        max-width: 2000px;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top:20px;
+      }
+  
+      /* Your custom CSS styles for each carousel slide */
+      .swiper-slide {
+        
+          position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        
+        background-color: #00ff55;
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+  
+      .slide-title {
+        /* margin-bottom: 10px; */
+        margin-right: 100px;
+        font-size: 50px;
+        font-weight: normal;
+        text-align:left;
+  
+      }
+  
+      .slide-description {
+        font-size: 14px;
+        width:300px;
+        margin-right:65px;
+          text-align:left;
+      }
+      .slide-image img{
+          border-radius: 3%;
+          margin-top:1px;
+          
+      }
+.swiper-button-next
+{
+    --swiper-theme-color: #ffffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    --swiper-navigation-size: 24px;
+    
+}   
+.swiper-button-prev
+{
+    --swiper-theme-color:#ffffff;
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+    --swiper-navigation-size: 24px;
+
+} 
+
+
+span
+{
+color:#BC6FF1;
+}
+.contact_me_pg
+{
+    position: relative;
+    margin-top:30%;
+    /* transform: translate(-50%, -50%); */
+    
+}
+.contact_tit{
+    font-size:92px;
+    font-weight: bold;
+}
+.c_me_sec{
+    width: 458px;
+    margin-bottom:15px;
+
+    color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.cunt_form{
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid white;
+    width:450px;
+    /* transition:all .5s; */
+
+}
+.form_box{
+       transition:all .5s;
+}
+.form_box:hover{
+    transform:scale(1.02,1.02);
+}
+.cunt_form:focus
+{   outline: none;
+    border-bottom: 2.5px solid #892CDC;
+    
+   
+}
+.form_box:focus-within{
+    transform:scale(1.08,1.08);
+    overflow: auto;
+}   
+
+.tit_form {
+    color: black;
+    animation:all 0.4s;
+    /* Initial color of the label */
+  }
+  
+  .cunt_form:focus + .tit_form,
+  .cunt_form.has-value + .tit_form {
+    color: green;
+    font: size 11px; /* Color of the label when the input is focused or has a value */
+
+  }
+  
+
+.tit_form{
+    color: #FFF;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.form_box{
+    margin-bottom:32px;
+}
+.cunt_btn
+    { margin-top: 15px;
+      margin-left:100px;  
+      font-size:14px; 
+}
+
+.contact_us_main_page
+{   
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left:30px;
+}
+
+
+.social_btn{
+    display:inline;
+    margin-right:7px;
+    /* background-color: #892CDC; */
+
+}
+.social{
+    background-color: transparent;
+    border:none;
+    transition: all 0.4s
+    
+
+}
+.social:hover svg path{
+    transition: fill .3s ease-out;
+    transform:scale(1.04,1.04);
+    fill:#892CDC;
+    
+}
+.about_me_main{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top:105px;
+    margin-left:30px;
+    
+}
+.am_title{
+    font-size:80px;
+    font-weight:bold;
+}
+.ab_text{
+    margin-top:80px;
+    margin-left:100px;
+
+}
+.am_sec{
+font-style: normal;
+text-align:left;
+font-weight: 400;
+line-height: normal;
+width: 480px;
+margin-bottom:20px;
+}
+
+footer{
+    padding-top:50px;
+    padding-left:30px;
+    height: 280px;
+    background-color:#1A1825;
+    display:grid;
+    grid-template-columns:auto auto auto;
+}
+ul{
+    list-style-type: none;  
+    font-size:15.5px;
+}
+.section_title{
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.footer_copyright{
+
+font-family: Poppins;
+font-size: 22px;
+
+}
+.foot_mail_head
+{
+    font-size:20px;
+    font-weight: bold;
+    
+}
+
+
+
+
+@media(max-width:991px) {
+    header .navigation {
+        display: none;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+}
+.form_main{
+    margin-top:200px;
+    margin-left:200px;
+}
+
+
+
