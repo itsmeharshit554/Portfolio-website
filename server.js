@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
@@ -18,8 +19,8 @@ app.post("/", function (req, res) {
   const transporter = nodemailer.createTransport({  
     service: 'gmail',
     auth: {
-      user: 'sainiharshit554@gmail.com', // Replace with your Gmail email
-      pass: "kgce ahfp briv eelq", // Replace with your Gmail password
+      user: 'sainiharshit554', // Replace with your Gmail email
+      pass:  process.env.EMAIL_PASS, // Replace with your Gmail password
     },
   });
 
@@ -43,8 +44,7 @@ app.post("/", function (req, res) {
   });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+app.listen(3000, () => {
   console.log(`Server is running on port ${PORT}`);
 });
   
